@@ -133,7 +133,7 @@ const Content = () => {
       <div className='container '>
         <div className='row'>
         <div className='col-8 p-4'>
-          <h3 className='text-center text-light '>Welcome to News Paper HUb</h3>
+          <h3 className='text-center text-light '>Welcome to News Paper Hub</h3>
         <p className='text-left w-100 my-3 p-5 text-light'>
         News Paper Hub is an online platform that serves as a centralized repository for a wide range of newspapers. It provides users with access to local, national, and international newspapers in one convenient location. The platform allows users to stay informed with the latest news, explore various publications, and compare viewpoints across different sources. Whether it's breaking news, in-depth analysis, or editorial opinions, News Paper Hub ensures a seamless and user-friendly experience for accessing diverse content.
         </p>

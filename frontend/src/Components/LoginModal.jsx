@@ -6,9 +6,6 @@ import { store } from './ContextAPI';
 
 const LoginModal = ({ show, onHide, modalType, onChangeModal }) => {
 
- 
-  
-  
   const [data, setData] = useState({
     singupFullName: '',
     signupEmail: '',
@@ -123,6 +120,7 @@ const LoginModal = ({ show, onHide, modalType, onChangeModal }) => {
       })
       .catch((err)=>
       {
+        alert("Invalid Otp")
         console.log(err)
       })
       console.log(registerData);

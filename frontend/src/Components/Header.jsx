@@ -19,12 +19,26 @@ const Header = ({ onLoginClick }) => {
   return (
     <header className="bg-primary text-white d-flex justify-content-between align-items-center">
       <h1 className="ms-5">NEWS PAPER HUB</h1>
-      <button
-        className={`btn me-5 ${loginData ? 'btn-danger' : 'btn-primary'}`}
-        onClick={handleButtonClick}
-      >
-        {loginData ? 'Logout' : 'Login'}
-      </button>
+      <div className="me-5 d-flex gap-2">
+        {/* Feedback Button */}
+
+        { loginData &&
+            <a
+            href="https://forms.gle/XurF2b3xbtyLy6AJ6"
+            className="btn btn-secondary"
+          >
+            Feedback
+          </a>
+        }
+        
+        {/* Login/Logout Button */}
+        <button
+          className={`btn ${loginData ? 'btn-danger' : 'btn-primary'}`}
+          onClick={handleButtonClick}
+        >
+          {loginData ? 'Logout' : 'Login'}
+        </button>
+      </div>
     </header>
   );
 };
